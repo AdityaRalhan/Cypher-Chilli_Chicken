@@ -24,7 +24,7 @@ import {
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 
-const PoliceDashboard = () => {
+const personalAssistant = () => {
   const [activeTab, setActiveTab] = useState("cases");
   const [selectedCase, setSelectedCase] = useState(null);
 
@@ -110,7 +110,7 @@ const PoliceDashboard = () => {
           <div className="flex items-center space-x-2">
             <Shield className="text-blue-400 h-8 w-8" />
             <span className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-cyan-300">
-              Police Dashboard
+              Your Dashboard
             </span>
           </div>
           <div className="flex items-center space-x-6">
@@ -348,4 +348,4 @@ const PoliceDashboard = () => {
   );
 };
 
-export default PoliceDashboard;
+export default personalAssistant;
